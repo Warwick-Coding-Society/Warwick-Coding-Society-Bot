@@ -11,7 +11,7 @@ use serenity::{
     prelude::*,
 };
 
-use commands::mentor::*;
+use commands::{mentor::*, meta::*};
 
 // CONSTANTS
 const PREFIX: &str = "~";
@@ -38,7 +38,7 @@ impl EventHandler for Handler {
 
 #[group]
 //#[commands(ping)]
-#[commands(pair)]
+#[commands(pair, purge)]
 struct General;
 
 #[group]
